@@ -43,9 +43,11 @@
     .opt{
         padding-top: 15px;
         padding-bottom: 15px;
-        display: flex;
-        flex-direction:column;
-        justify-self:flex-start;
+        justify-self: flex-end;
+    }
+
+    .speac {
+        width: 75%;
     }
 </style>
 <div class="mainS border-3">
@@ -57,59 +59,58 @@
         </div>
     </div>
     
-    <form asp-controller="Order" asp-action="Menu1" method="POST">
+    <form class="menu" asp-controller="Order" asp-action="Menu1" method="POST">
 
         <input asp-for="Username" type="hidden" value="64010597">
         <input asp-for="FoodStore" type="hidden" value="ร้านเทคโนอินเตอร์">
         <input asp-for="FoodMenu_Option" type="hidden" id="F_opt" value="รายการอาหาร">
-        <div class="menu">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="ชุดอาหารเช้าBreakfast" id="m1"> <label class="form-check-label" for="m1">ชุดอาหารเช้าBreakfast</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="ครีมซุปเห็ด" id="m2"> <label class="form-check-label" for="m2">ครีมซุปเห็ด</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="ครีมซุปไก่" id="m3"> <label class="form-check-label" for="m3">ครีมซุปไก่</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="สลัดเทคโนไก่ทอด" id="m4"> <label class="form-check-label" for="m4">สลัดเทคโนไก่ทอด</label>
-            </div>
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="สลัดเทคโนไก่ย่าง" id="m5"> <label class="form-check-label" for="m5">สลัดเทคโนไก่ย่าง</label>
-            </div>
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="สลัดเทคโนหมูทอด" id="m6"> <label class="form-check-label" for="m6">สลัดเทคโนหมูทอด</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="สลัดเทคโนปลาทอด" id="m7"> <label class="form-check-label" for="m7">สลัดเทคโนปลาทอด</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดแกงกะหรี่" id="m8"> <label class="form-check-label" for="m8">ข้าวหมูทอดแกงกะหรี่</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดทงคัตสึ" id="m9"> <label class="form-check-label" for="m9">ข้าวหมูทอดทงคัตสึ</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดซอสแฮม" id="m10"> <label class="form-check-label" for="m10">ข้าวหมูทอดซอสแฮม</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวไก่ย่างเทอริยากิ" id="m11"> <label class="form-check-label" for="m11">ข้าวไก่ย่างเทอริยากิ</label>
-            </div>
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวยำไก่ย่าง" id="m12"> <label class="form-check-label" for="m12">ข้าวยำไก่ย่าง</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวไก่พะแนง" id="m13"> <label class="form-check-label" for="m13">ข้าวไก่พะแนง</label>
-            </div> 
-            <div class="form-check">    
-                <input class="form-check-input" type="checkbox" value="ข้าวไก่ทอดเขียวหวาน" id="m14"> <label class="form-check-label" for="m14">ข้าวไก่ทอดเขียวหวาน</label>
-            </div> 
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ชุดอาหารเช้าBreakfast" id="m1"> <label class="form-check-label" for="m1">ชุดอาหารเช้าBreakfast</label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ครีมซุปเห็ด" id="m2"> <label class="form-check-label" for="m2">ครีมซุปเห็ด</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="ครีมซุปไก่" id="m3"> <label class="form-check-label" for="m3">ครีมซุปไก่</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="สลัดเทคโนไก่ทอด" id="m4"> <label class="form-check-label" for="m4">สลัดเทคโนไก่ทอด</label>
+        </div>
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="สลัดเทคโนไก่ย่าง" id="m5"> <label class="form-check-label" for="m5">สลัดเทคโนไก่ย่าง</label>
+        </div>
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="สลัดเทคโนหมูทอด" id="m6"> <label class="form-check-label" for="m6">สลัดเทคโนหมูทอด</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="สลัดเทคโนปลาทอด" id="m7"> <label class="form-check-label" for="m7">สลัดเทคโนปลาทอด</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดแกงกะหรี่" id="m8"> <label class="form-check-label" for="m8">ข้าวหมูทอดแกงกะหรี่</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดทงคัตสึ" id="m9"> <label class="form-check-label" for="m9">ข้าวหมูทอดทงคัตสึ</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวหมูทอดซอสแฮม" id="m10"> <label class="form-check-label" for="m10">ข้าวหมูทอดซอสแฮม</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวไก่ย่างเทอริยากิ" id="m11"> <label class="form-check-label" for="m11">ข้าวไก่ย่างเทอริยากิ</label>
+        </div>
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวยำไก่ย่าง" id="m12"> <label class="form-check-label" for="m12">ข้าวยำไก่ย่าง</label>
+        </div> 
+        <div class="form-check">    
+            <input class="form-check-input" type="checkbox" value="ข้าวไก่พะแนง" id="m13"> <label class="form-check-label" for="m13">ข้าวไก่พะแนง</label>
+        </div> 
+        <div class="form-check speac">    
+            <input class="form-check-input" type="checkbox" value="ข้าวไก่ทอดเขียวหวาน" id="m14"> <label class="form-check-label" for="m14">ข้าวไก่ทอดเขียวหวาน</label>
+        </div> 
+
         <div class="opt">
             <h2>Option</h2>
             <textarea class="form-control form-rounded " rows="3" cols="100" name="option" id="option"></textarea>
-            <br/>
+            <br />
             <div>
                 <div class="form-group">
                     <div class="form-horizontal col-xs-4">
@@ -132,8 +133,6 @@
         
 
     </form>
-    <p id="Isorder"></p>
-    
 </div>
 <script>
         function sendOrder() {
@@ -182,14 +181,7 @@
                 orderAll.push(document.getElementById("m14").value)
             }
             orderAll.push("option="+document.getElementById("option").value)
-        document.getElementById("Isorder").innerText = orderAll.join(" ");
         document.getElementById("F_opt").value = orderAll.join(",");
-            //var orderAlls =  orderAll.join(",");
-            //$.ajax({
-            //    type: "POST",
-            //    url: "/Order/Menu1",
-            //    data: orderAlls
-            //});
         }
         
     </script>

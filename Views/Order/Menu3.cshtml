@@ -45,72 +45,66 @@
     }
 
     .opt {
-        
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     .speac {
-        width: 100%;
+        width: 50%;
     }
 </style>
 <div class="mainS border-3">
     <div class="store border-3">
-        <img class="image" src="https://sv1.picz.in.th/images/2023/04/19/mIkhK1.png" alt="ร้านไอเย็น" width="200" height="150">
+        <img class="image" src="https://sv1.picz.in.th/images/2023/04/19/mIk7OQ.png" alt="ร้านไอ้หนวด" width="200" height="150">
         <div class="storeCap caption">
-            ชื่อร้าน : ร้านไอเย็น <br />
-            ประเภทอาหาร : รวมมิตร/ลอดช่อง,น้ำแข็งใส,เต้าทึง,ขนม/ขนมไทย,ซาลาเปา,ลูกชิ้นทอด,ผลไม้
+            ชื่อร้าน : ร้านไอ้หนวด <br />
+            ประเภทอาหาร : ข้าวราดแกง
         </div>
     </div>
+
     <form class="menu" asp-controller="Order" asp-action="Menu1" method="POST">
         <input asp-for="Username" type="hidden" value="64010597">
-        <input asp-for="FoodStore" type="hidden" value="ร้านไอเย็น">
+        <input asp-for="FoodStore" type="hidden" value="ร้านไอ้หนวด">
         <input asp-for="FoodMenu_Option" type="hidden" id="F_opt" value="รายการอาหาร">
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="น้ำแข็งใส" id="m1"> <label class="form-check-label" for="m1">น้ำแข็งใส</label>
+            <input class="form-check-input" type="checkbox" value="หมูหวาน" id="m1"> <label class="form-check-label" for="m1">หมูหวาน</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="เต้าทึง" id="m2"> <label class="form-check-label" for="m2">เต้าทึง</label>
+            <input class="form-check-input" type="checkbox" value="ไก่ชุปแป้งทอด" id="m2"> <label class="form-check-label" for="m2">ไก่ชุปแป้งทอด</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="เฉาก๊วยนมสด" id="m3"> <label class="form-check-label" for="m3">เฉาก๊วยนมสด</label>
+            <input class="form-check-input" type="checkbox" value="ไข่พะโล้" id="m3"> <label class="form-check-label" for="m3">ไข่พะโล้</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="รวมมิตร" id="m4"> <label class="form-check-label" for="m4">รวมมิตร</label>
+            <input class="form-check-input" type="checkbox" value="ผัดกะเพรา" id="m4"> <label class="form-check-label" for="m4">ผัดกะเพรา</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ลอดช่องสิงคโปร์" id="m5"> <label class="form-check-label" for="m5">ลอดช่องสิงคโปร์</label>
+            <input class="form-check-input" type="checkbox" value="ปลาผัดพริกเกลือ" id="m5"> <label class="form-check-label" for="m5">ปลาผัดพริกเกลือ</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ขนมหวาน" id="m6"> <label class="form-check-label" for="m6">ขนมหวาน</label>
+            <input class="form-check-input" type="checkbox" value="ไส้กรอก" id="m6"> <label class="form-check-label" for="m6">ไส้กรอก</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ขนมไทย" id="m7"> <label class="form-check-label" for="m7">ขนมไทย</label>
+            <input class="form-check-input" type="checkbox" value="ต้มข่าไก่" id="m7"> <label class="form-check-label" for="m7">ต้มข่าไก่</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ผลไม้ตามฤดูกาล" id="m8"> <label class="form-check-label" for="m8">ผลไม้ตามฤดูกาล</label>
+            <input class="form-check-input" type="checkbox" value="แกงเขียวหวาน" id="m8"> <label class="form-check-label" for="m8">แกงเขียวหวาน</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="เบอเกอรี่" id="m9"> <label class="form-check-label" for="m9">เบอเกอรี่</label>
+            <input class="form-check-input" type="checkbox" value="ต้มจืด" id="m9"> <label class="form-check-label" for="m9">ต้มจืด</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ลูกชิ้นทอด" id="m10"> <label class="form-check-label" for="m10">ลูกชิ้นทอด</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="นักเก็ต" id="m11"> <label class="form-check-label" for="m11">นักเก็ต</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="ปอเปี๊ยะ" id="m12"> <label class="form-check-label" for="m12">ปอเปี๊ยะ</label>
+            <input class="form-check-input" type="checkbox" value="ไข่เจียว" id="m10"> <label class="form-check-label" for="m10">ไข่เจียว</label>
         </div>
         <div class="form-check speac">
-            <input class="form-check-input" type="checkbox" value="ขนมขบเคี้ยว" id="m13"> <label class="form-check-label" for="m13">ขนมขบเคี้ยว</label>
+            <input class="form-check-input" type="checkbox" value="ไข่ดาว" id="m11"> <label class="form-check-label" for="m11">ไข่ดาว</label>
         </div>
 
         <div class="opt">
             <h2>Option</h2>
-            <textarea class="form-control form-rounded personD" rows="3" cols="100" name="option" id="option"></textarea>
+            <textarea class="form-control form-rounded " rows="3" cols="100" name="option" id="option"></textarea>
             <br />
-            <div class="personD">
+            <div>
                 <div class="form-group">
                     <div class="form-horizontal col-xs-4">
                         <label class="control-label col-sm-2" for="nameReceive">ชื่อผู้รับ :</label>
@@ -121,9 +115,9 @@
                         <input class="form-control" type="text" id="PhoneNumber" asp-for="PhoneNumber" required>
                     </div>
                 </div>
-                <div class="form-horizontal ">
+                <div class="form-horizontal col-xs-4">
                     <label class="control-label col-sm-2" for="RecipientAddress">ที่อยู่ :</label>
-                    <input class="form-control col-xs-4" type="text" id="RecipientAddress" asp-for="RecipientAddress" required>
+                    <input class="form-control" type="text" id="RecipientAddress" asp-for="RecipientAddress" required>
                 </div>
             </div>
             <br />
@@ -131,8 +125,8 @@
         </div>
 
     </form>
-
 </div>
+
 <script>
     function sendOrder() {
         orderAll = [];
@@ -169,12 +163,6 @@
         }
         if (document.getElementById("m11").checked == true) {
             orderAll.push(document.getElementById("m11").value)
-        }
-        if (document.getElementById("m12").checked == true) {
-            orderAll.push(document.getElementById("m12").value)
-        }
-        if (document.getElementById("m13").checked == true) {
-            orderAll.push(document.getElementById("m13").value)
         }
 
         orderAll.push("option=" + document.getElementById("option").value)
