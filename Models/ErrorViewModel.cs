@@ -1,4 +1,4 @@
-namespace PJ_Webapp.Models
+namespace Projectwebapp.Models
 {
     public class ErrorViewModel
     {

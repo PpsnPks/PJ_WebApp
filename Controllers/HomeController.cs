@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PJ_Webapp.Models;
+using Projectwebapp.Models;
 using System.Diagnostics;
 
-namespace PJ_Webapp.Controllers
+namespace Projectwebapp.Controllers
 {
     public class HomeController : Controller
     {
